@@ -10,7 +10,8 @@ export default {
       xl: ["20px", "24.38px"],
       "2xl": ["24px", "29.26px"],
       "3xl": ["28px", "50px"],
-      "4xl": ["48px", "58px"],
+      "4xl": ["36px", "50px"],
+      "6xl": ["62px", "84px"],
       "8xl": ["96px", "106px"],
     },
     extend: {
@@ -19,7 +20,9 @@ export default {
         spacegrotesk: ["Space Grotesk", "sans-serif"],
       },
       colors: {
-        primary: "rgb(19, 20, 27)",
+        primary: "white",
+        secondry:"rgb(19, 20, 27)",
+        newsletter:"#fcf5f5",
         "coral-red": "#FF6452",
         "slate-gray": "#6D6D6D",
         "pale-blue": "#F5F6FF",
@@ -29,8 +32,8 @@ export default {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
       },
       backgroundImage: {
-        hero: "url('assets/images/collection-background.svg')",
-        card: "url('assets/images/thumbnail-background.svg')",
+        shirt: "url('')",
+        
       },
       screens: {
         wide: "1440px",

@@ -5,26 +5,26 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IconContext } from "react-icons/lib";
 const Header = () => {
   return (
-    <nav className="relative w-full min-h-max py-4 bg-primary flex justify-between items-center pr-4">
-      <h1 className="text-white font-clashdisplay font-light text-2xl hover:cursor-pointer ml-8 sm:ml-16 sm:text-3xl">
+    <nav className="relative w-full min-h-max py-4 bg-primary flex justify-between items-center ">
+      <h1 className="text black font-clashdisplay font-light text-2xl hover:cursor-pointer ml-8 md:ml-18 lg:ml-32 md:text-4xl">
         Essentials
       </h1>
       <ul className="list-none hidden justify-center items-center  md:flex">
-        <li className="text-white font-spacegrotesk font-normal hover:cursor-pointer text-lg mx-7 lg:mx-10">
+        <li className="text-black font-spacegrotesk font-normal hover:cursor-pointer text-lg mx-7 lg:mx-10">
           Men
         </li>
-        <li className="text-white font-spacegrotesk font-normal hover:cursor-pointer text-lg mx-7 lg:mx-10">
+        <li className="text black font-spacegrotesk font-normal hover:cursor-pointer text-lg mx-7 lg:mx-10">
           Women
         </li>
-        <li className="text-white font-spacegrotesk font-normal hover:cursor-pointer text-lg mx-7 lg:mx-10">
+        <li className="text black font-spacegrotesk font-normal hover:cursor-pointer text-lg mx-7 lg:mx-10">
           Accesories
         </li>
       </ul>
-      <ul className="list-none flex justify-center items-center">
-        <li className="hover:cursor-pointer mx-[10px] sm:mx-0.5 hidden md:block">
+      <ul className="list-none flex justify-center items-center mr-8  md:mr-18 lg:mr-24">
+        <li className="hover:cursor-pointer hidden mr-8 md:block">
           <IconContext.Provider
             value={{
-              color: "white",
+              color: "black",
               className: "global-class-name searchIcon",
               size: "20px",
             }}
@@ -32,10 +32,10 @@ const Header = () => {
             <SlHandbag />
           </IconContext.Provider>
         </li>
-        <li className="hover:cursor-pointer mx-14 hidden md:block">
+        <li className="hover:cursor-pointer  hidden ml-8 md:block">
           <IconContext.Provider
             value={{
-              color: "white",
+              color: "black",
               className: "global-class-name searchIcon",
               size: "25px",
             }}
@@ -46,7 +46,7 @@ const Header = () => {
         <li className="hover:cursor-pointer mx-[10px] sm:mx-14 md:hidden">
           <IconContext.Provider
             value={{
-              color: "white",
+              color: "black",
               className: "global-class-name searchIcon",
               size: "25px",
             }}

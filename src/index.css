@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 @import url("https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,6 +11,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+body {
+  @apply bg-primary;
+}
 
 @layer components {
   .contentWrapper {
@@ -19,6 +21,103 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+  }
+  .buttonHover {
+    @apply bg-transparent border border-solid border-secondry text-black;
+  }
+
+  .categoryImg {
+    @apply w-[100%] h-[300px] sm:w-[48%] hover:cursor-pointer rounded-3xl;
+  }
+  .denim {
+    position: relative;
+  }
+  .denim::before {
+    opacity: 0.85;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url("../src/assets/jeans-expanded.jpeg");
+    background-size: cover;
+    background-position: center;
+    transition:all 0.3s ease-in;
+    @apply hover:opacity-[1];
+  }
+
+  .cap {
+    position: relative;
+    @apply w-[100%] h-[350px] sm:w-[48%] sm:h-[300px];
+  }
+  .cap::before {
+    opacity: 0.85;
+    /* @apply w-[100%] h-[350px]; */
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url("../src/assets/cap.jpeg");
+    background-size: cover;
+    background-position: top;
+    transition:all 0.3s ease-in;
+    @apply hover:opacity-[1];
+  }
+  .shirt {
+    position: relative;
+  }
+  .shirt::before {
+    opacity: 0.85;
+    /* @apply w-[100%] h-[350px]; */
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url("../src/assets/newshirt.jpeg");
+    background-size: cover;
+    background-position: center;
+    transition:all 0.3s ease-in;
+    @apply hover:opacity-[1];
+  }
+  .sneakers {
+    position: relative;
+  }
+  .sneakers::before {
+    opacity: 0.85;
+    /* @apply w-[100%] h-[350px]; */
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url("../src/assets/sneaker.jpeg");
+    background-size: cover;
+    background-position: center;
+    transition:all 0.3s ease-in;
+    @apply hover:opacity-[1];
+  }
+  .backgrass {
+    position: relative;
+  }
+  .backgrass::before {
+    @apply w-full h-full;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url("../src/assets/grassdarkback.jpeg");
+    filter: blur(5px);
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
   }
 }
 

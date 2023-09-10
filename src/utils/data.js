@@ -1,8 +1,7 @@
-import pant from "../assets/pants.jpeg"
-import shoes from "../assets/shoes.jpeg"
-import Accesories from "../assets/accesories.jpeg"
-import shirt from "../assets/shirt.jpeg"
-
+import pant from "../assets/denim.jpeg";
+import shoes from "../assets/sneaker.jpeg";
+import Accesories from "../assets/cap.jpeg";
+import shirt from "../assets/newshirt.jpeg";
 
 export const sliderItems = [
   {
@@ -33,23 +32,28 @@ export const categories = [
     id: 1,
     img: shirt,
     title: "Shirts",
+    url: "../assets/newshirt.jpeg",
   },
   {
     id: 2,
     img: pant,
     title: "Pants",
+    url: "https://images.pexels.com/photos/10600596/pexels-photo-10600596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     id: 3,
     img: shoes,
     title: "Shoes",
+    url: "https://images.pexels.com/photos/5730956/pexels-photo-5730956.jpeg?auto=compress&cs=tinysrgb&w=1600",
   },
   {
     id: 4,
     img: Accesories,
     title: "Accesories",
+    url: "https://images.pexels.com/photos/13387446/pexels-photo-13387446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];
+
 
 export const popularProducts = [
   {
