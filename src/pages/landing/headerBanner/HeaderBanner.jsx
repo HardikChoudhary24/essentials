@@ -1,6 +1,8 @@
 import React from "react";
 import bannerImg from "../../../assets/banner.jpeg";
+import { useNavigate } from "react-router-dom";
 const HeaderBanner = () => {
+  const navigate = useNavigate();
   return (
     <header className="w-full h-fit bg-primary flex flex-col justify-between items-start sm:pl-0 sm:flex-row sm:items-center border-none">
       <div className="flex flex-col justify-center items-start order-last sm:order-first sm:ml-4 lg:ml-32 ">
@@ -8,7 +10,10 @@ const HeaderBanner = () => {
           Clothing designed for
           <span className="block sm:inline"> adventure.</span>
         </p>
-        <button className="rounded-none text-white bg-secondry p-1 font-spacegrotesk mx-5 mb-4 lg:mx-0 text-sm  border border-solid border-black font-medium w-32 hover:buttonHover md:p-2 lg:p-3 xl:p-4 lg:my-3 transition-all ease-in duration-[0.1s]">
+        <button
+          className="rounded-none  p-1 font-spacegrotesk mx-5 mb-4 lg:mx-0 text-sm   font-medium w-32 hover:buttonHover md:p-2 lg:p-3 xl:p-4 lg:my-3 transition-all ease-in duration-[0.1s] bg-transparent border border-solid border-secondry text-black"
+          onClick={() => navigate("/products/all")}
+        >
           Shop Now
         </button>
       </div>

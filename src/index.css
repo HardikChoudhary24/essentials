@@ -9,13 +9,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 body {
   @apply bg-primary;
 }
 
 @layer components {
+  .navunderline{
+    position: relative;
+  }
+  .navunderline::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    pointer-events: none;
+  }
+  .navunderline:hover::after{
+    opacity: 1;
+  }
   .contentWrapper {
     width: 100%;
     max-width: 1200px;
@@ -23,7 +41,8 @@ body {
     padding: 0 20px;
   }
   .buttonHover {
-    @apply bg-transparent border border-solid border-secondry text-black;
+    /* @apply bg-transparent border border-solid border-secondry text-black; */
+    @apply border border-solid border-black text-white bg-secondry;
   }
 
   .categoryImg {
@@ -43,7 +62,7 @@ body {
     background-image: url("../src/assets/jeans-expanded.jpeg");
     background-size: cover;
     background-position: center;
-    transition:all 0.3s ease-in;
+    transition: all 0.3s ease-in;
     @apply hover:opacity-[1];
   }
 
@@ -63,7 +82,7 @@ body {
     background-image: url("../src/assets/cap.jpeg");
     background-size: cover;
     background-position: top;
-    transition:all 0.3s ease-in;
+    transition: all 0.3s ease-in;
     @apply hover:opacity-[1];
   }
   .shirt {
@@ -81,7 +100,7 @@ body {
     background-image: url("../src/assets/newshirt.jpeg");
     background-size: cover;
     background-position: center;
-    transition:all 0.3s ease-in;
+    transition: all 0.3s ease-in;
     @apply hover:opacity-[1];
   }
   .sneakers {
@@ -99,7 +118,7 @@ body {
     background-image: url("../src/assets/sneaker.jpeg");
     background-size: cover;
     background-position: center;
-    transition:all 0.3s ease-in;
+    transition: all 0.3s ease-in;
     @apply hover:opacity-[1];
   }
   .backgrass {

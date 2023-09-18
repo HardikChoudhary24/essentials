@@ -31,25 +31,25 @@ export const categories = [
   {
     id: 1,
     img: shirt,
-    title: "Shirts",
+    title: "shirts",
     url: "../assets/newshirt.jpeg",
   },
   {
     id: 2,
     img: pant,
-    title: "Pants",
+    title: "pants",
     url: "https://images.pexels.com/photos/10600596/pexels-photo-10600596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     id: 3,
     img: shoes,
-    title: "Shoes",
+    title: "shoes",
     url: "https://images.pexels.com/photos/5730956/pexels-photo-5730956.jpeg?auto=compress&cs=tinysrgb&w=1600",
   },
   {
     id: 4,
     img: Accesories,
-    title: "Accesories",
+    title: "accesories",
     url: "https://images.pexels.com/photos/13387446/pexels-photo-13387446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];
@@ -89,3 +89,38 @@ export const popularProducts = [
     img: "https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
   },
 ];
+
+
+export const filter = [
+  {
+    name: "Sort By",
+    dropdownName: "sortby",
+    dropdownList: [
+      { name: "toprated", value: "Top Rated" },
+      { name: "lowtohigh", value: "Price Low-High" },
+      { name: "hightolow", value: "Price High-Low" },
+    ],
+  },
+  {
+    name: "Price",
+    dropdownName: "price",
+    dropdownList: [
+      { name: "25_50", value: "$20 - $50" },
+      { name: "50_100", value: "$50 - $100" },
+      { name: "100_150", value: "$100 - $150" },
+    ],
+  },
+  {
+    name: "Color",
+    dropdownName: "color",
+    dropdownList: [
+      { name: "red", value: "Red" },
+      { name: "black", value: "Black" },
+      { name: "white", value: "White" },
+      { name: "green", value: "Green" },
+      { name: "blue", value: "Blue" },
+    ],
+  },
+]; 
+
+// dropdownList: [{name:"toprated",value:"Top Rated"},{name:"lowtohigh",value:"Price Low-High"},{name:"hightolow",value:"Price High-Low"}],

@@ -1,10 +1,13 @@
 import React from 'react'
+import PreviewImages from '../../components/previewImage/PreviewImages'
+import ProductDetails from '../../components/productDetails/ProductDetails'
 
 const Details = () => {
   return (
-    <div>
-      Details
-    </div>
+    <section>
+      <PreviewImages/>
+      <ProductDetails/>
+    </section>
   )
 }
 
